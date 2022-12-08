@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.contact-container{
+    padding:80px 64px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Roboto';
+   width: 100%;
+   flex-direction: column;
+}
+.contact-container .touch{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282938;
+    text-transform: capitalize;
+}
+.contact-container h2{
+    padding-top: 16px;
+    padding-bottom: 10px;
+    font-weight:1000;
+    font-size:45px;
+    color: #282938;
+    text-transform: capitalize;
+}
+.contact-container .form{
+    width:55%;
+    padding-top:50px;
+}
+.contact-container .form form input{
+    background: #FFFFFF;
+    padding: 7px 10px;   
+    border: 1px solid #5E3BEE;
+    width: 100%;
+    border-radius:5px;
+}
+.contact-container .choose-one{
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+.contact-container .form form .choose-one label{
+    color: #282938;
+    font-family: 'Roboto';
+    width: 100%;
+    text-align: left;
+    float: left;
+    font-weight:600;
+    padding-bottom: 8px;
+    font-size: 16px;
+    
+}
+.contact-container .form form select{
+    background: #FFFFFF;
+    padding: 7px 10px;     
+    margin-top: 10px;
+    border: 1px solid #5E3BEE;
+    width: 100%;
+    border-radius:5px;
+}
+.contact-container .form form .text-area{
+    padding-top: 20px;
+}
+.contact-container .form form .text-area textarea{
+    background: #FFFFFF;
+    padding: 5px 10px; 
+    border: 1px solid #5E3BEE;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+.contact-container .form form .inputs-top{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+.contact-container .form form .inputs-top div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+.contact-container .form form div label{
+    color: #282938;
+    font-family: 'Roboto';
+    font-weight:600;
+    float: left;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+.contact-container .form .checkbox{
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    color: #282938;
+    align-items: center;
+}
+.contact-container .form .checkbox input{
+  margin-right: 5px;
+}
+.contact-container .form .button{
+    width: 100%;
+    text-align: center;
+    padding-top:50px;
+    font-family:'roboto';
+    font-size: 16px;
+}
+.contact-container .form .button button{
+    padding: 14px 32px;
+    border: none;
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    background-color: #5E3BEE;
+    border:1px solid #5E3BEE;
+}
+.contact-container .form .button button:hover{
+       background-color: #fff;
+       color: #5E3BEE;
+}
+/* responsive css starts from here! */
+@media screen and (max-width:845px) {
+    .contact-container{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .contact-container .form form .inputs-top{
+        grid-template-columns: 1fr;
+        }
+        .contact-container .form {
+        width: 80%;
+        }
+}
+@media screen and (max-width:500px) {
+    .contact-container .form {
+        width: 100%;
+        }
+}

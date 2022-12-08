@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.wrapper-about-me{
+    padding:80px 64px;
+    display: flex;
+    align-items:center;
+}
+.wrapper-about-me .my-image img{
+    width:450px;
+}
+.wrapper-about-me .content-about-me{
+    padding-left:50px;
+}
+.wrapper-about-me .content-about-me .about{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282938;
+    text-transform: capitalize;
+}
+.wrapper-about-me .content-about-me h2{
+    padding-top: 16px;
+    font-weight:1000;
+    font-size:45px;
+    color: #282938;
+    text-transform: capitalize;
+}
+.wrapper-about-me .content-about-me p{
+    font-family: 'Roboto';
+    padding:10px 30px 10px 0px;
+    font-weight:400;
+    font-size: 18px;
+    line-height:25px;
+}
+@media screen and (max-width:1000px) {
+    .wrapper-about-me {
+        padding: 80px 16px !important;
+        align-items: flex-end !important;
+    }
+}
+
+/* responsive css starts from here !*/
+@media screen and (max-width:768px){
+    .wrapper-about-me{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-left: 20px;
+        padding-right:20px;
+    }
+    .wrapper-about-me .my-image img{
+        padding: 50px;
+    }
+    .wrapper-about-me .content-about-me .about{
+        display: none;
+    }
+    .wrapper-about-me .content-about-me p{
+        padding: 0px;
+    }
+    .wrapper-about-me .content-about-me{
+        padding: 0px;
+        padding-top:20px;
+    }
+}

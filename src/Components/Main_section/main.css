@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.main{
+    display: flex;
+    align-items: center;
+    padding:80px 64px;
+    padding-top: 150px;
+    background: #F5FCFF
+}
+.main .image{
+    z-index: 5;
+}
+.main .intro .name{
+     font-family: 'Roboto';
+     font-weight: 600;
+     font-size: 16px;
+     color: #282938;
+    
+}
+.main .intro .name h1{
+    margin-top:10px !important; 
+    font-size:30px;  
+}
+.main .intro h3{
+    padding:20px 10px 50px 0px;
+    letter-spacing:1px;
+    color: #282938;
+    line-height:30px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+}
+.main .intro p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #1C1E53;
+    font-style: normal;
+padding-right: 10px;
+padding-bottom:50px;
+font-size: 18px;
+}
+.main .intro .button button{
+     font-family: 'Roboto';
+     font-weight:600;
+     cursor:pointer !important;
+     font-size:14px;
+     color: #FFFFFF;
+     text-transform: capitalize;
+     position: absolute;
+     border: none;
+     z-index: 1;
+     background: #5E3BEE;
+     padding: 14px 32px;
+     text-align:left;
+     transition:0.5s ease-in-out !important;
+     
+    }
+    .main .intro .button button:hover{
+        padding-right:500px;
+       border-radius:4px 135px 135px 4px;
+     }
+
+/* responsive css starts from here !*/
+@media screen and (max-width:1100px) {
+ 
+    .main {
+     flex-direction: column-reverse;
+     text-align: center;
+     justify-content: center;
+     padding-left: 20px;
+     padding-right:20px;
+    }
+    .main .intro .button button{
+        position: static;
+    }
+      .main .intro .button button:hover{
+        padding-right:500px;
+        padding: 14px 32px;
+        border-radius:30px 30px;
+
+     }
+    .main .image img{
+        width: 100%;
+    }
+    .main .intro{
+        padding:40px 30px 0px 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main .intro h3{
+        padding: 20px 0px 50px 0px;
+    }
+    .main .intro{
+        padding:40px 0px 0px 0px;
+    }
+}
